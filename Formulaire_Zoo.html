@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device=width,initial-scale=1.0">
+	<link rel="stylesheet" href="Formulaire_Zoo.css">
+	<title>Contactez-nous</title>
+	<!-- Tournemaine Thibaut Keloglanian Nathan -->
+</head>
+<body>
+	<div id="conteneur">
+	<header>
+		<h1>Contactez-nous</h1>
+	</header>
+	<nav>
+		<ul>
+			<li><a href="./zooF.html"> Accueil</a></li>
+			<li><a href="#">Plan</a></li>
+			<li><a href="#">Animaux</a></li>
+			<li><a href="./Tarifs_Zoo.html">Tarifs</a></li>
+			<li><a href="./Formulaire_Zoo.html" class="ici">Contact-us</a></li>
+		</ul>
+	</nav>
+	<content>
+		<fieldset>
+				<legend>Posez nous votre question :</legend>
+				<p>
+					<label>Objet</label></content></br>
+						<select name="Question" class="Question">
+							<optgroup label="Administratif">
+								<option value="Formation">Formation</option>
+								<option value="Mentions">Mentions légales</option>
+							</optgroup>
+							<optgroup label="A propos">
+								<option value="QuestionZoo">A propos du zoo</option>
+								<option value="QuestionAnimaux">A propos des animaux</option>
+							</optgroup>
+							<optgroup label="Autres">
+								<option value="Feedback">Feedback</option>
+								<option value="Organisation">Organisation</option>
+							</optgroup>
+						</select>
+				</p>
+				<hr />
+				<p>
+					<label>Nom:</label>
+					<input type="text" name="Nom" id="Nom" placeholder="Nom"/>
+					<label>Prénom:</label>
+					<input type="text" name="Prénom" id="Prénom" placeohlder="Prénom"/>
+					<hr />
+					<label>Votre demande:</label></br>
+					<textarea rows="4" cols="50"name="demande" id="demande" placeholder="Ecrivez-nous votre demande"></textarea>
+					<label for="dossier">Ajouter un fichier au format (PDF/JPG)</label></br>
+					<input type="file" name="dossier" id="dossier"/>
+				</p>
+				<p>
+					<div id="donations">
+						<label>Donation :</label>	
+							<div id="radio1">
+								<input type="radio" name="donationP" value="Paypal" id="Paypal"/><label for="Paypal">Paypal</label>
+							</div>
+							<div id="radio2">
+								<input type="radio" name="donationM" value="MasterCard" id="Mastercard" /><label for="Mastercard">Mastercard</label>
+							</div>
+							<div id="radio3">
+								<input type="radio" name="donationV" value="Visa" id="Visa"/><label for="Visa">Visa</label>
+							</div>
+							<div id="radio4">
+								<input type="radio" name="donationVir" value="Virement" id="Virement"/><label for="Virement">Virement</label>
+							</div>
+					</div>
+					
+				</p>
+				<hr />
+				<p>
+					<div id="Satisfaction">
+						<p>Noter notre Zoo:</p>
+						<input type="range"  min="0" max="20" step="1" id="Range"/>
+					
+					</div>
+					<input type="button" value="Submit" id="submit"/>				
+				</p>
+
+
+			</fieldset>
+
+	</content>
+	
+		<div id="Réseaux">
+			<h2>Nos réseaux sociaux</h2>
+			<p><a href="https://www.facebook.com" target="_blank"><img src="images/facebook.png" alt="Facebook"/></a> <a href="https://twitter.com/home?lang=fr" target="_blank"><img src="images/twitter.png" alt="twitter"/></a> <a href="http://instagram.com" target="_blank"><img src="images/instagram.png" alt="Instagram"/></a> <a href="https://www.pinterest.fr/" target="_blank"><img src="images/pinterest.png" alt="pinterest"/></a> <a href="https://youtube.com/" target="_blank"><img src="images/youtube.png" alt="youtube"/></a></p>
+		</div>
+		<div id="Derniers_tweets">
+			
+    		<h2>Mon dernier tweet:</h2>
+    		<p>Retrouvez nos nouveaux arrivant en section B2</p>
+    		<p>Le 29 novembre à 13h00</p>
+    	</div>
+    	<div id="Nos_avis_presse">
+    		<h2>Nos avis clients:</h2>
+    		<ul>
+    			<li>Le figaro:Beau grand parc avec de magnifiques jardins botaniques, de jolies roseraies, un fabuleux petit zoo , des activités sur le lac, des petits cafés, etc., il s’agit d’un parc fabuleux.</li>
+    			<li>Times:Clean, happy animals, spacious, spectacular shows, interesting and good food are just a few words that I would use to describe this fantastic zoo. Really believe this is the best zoo I've ever been to.It's huge!</li>
+    			<li>La voix du nord:l'Izoo est assez différent de tous les autres zoos que nous avons vus jusqu'à présent,du plaisir pour les adultes et les enfants de 4 ans.</li>
+    		</ul>
+    	</div>
+    
+</div>
+</body>
+</html>
