@@ -1,0 +1,221 @@
+/*Tournemaine Thibaut Keloglanian Nathan*/
+body{
+	margin:0;
+	padding:0;
+	background-image:url("images/fond_jaune.png");
+}
+
+header{
+	text-align:center;
+	height:83px;
+	grid-area:h;
+	background-image:url("images/background.jfif");
+	margin-bottom:2px;
+
+}
+header h1{
+	position:absolute;
+	left:48%;
+	background-color:green;
+	border-radius:10px;
+}
+#conteneur{
+	display:grid;
+	grid-template-rows:15% 60% 20%;
+	grid-template-columns:3fr 40% 35%;
+	grid-template-areas:"h h h"
+						"n c c"
+						"a t r";
+}
+.ici{
+	background-color:#138A36;
+}
+nav{
+	grid-area:n;
+	width:100%;
+	height:100%;
+}
+#menu{
+	list-style-type: none; 
+	margin: 0px;
+	padding: 0px;
+}
+
+#menu ul {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	display: none;
+	width:30%;
+}
+#menu li {
+	position: relative;
+}
+#menu a {
+	display: block;
+	text-align: center;
+}
+#menu li:hover ul {
+	display: block ;
+	position: absolute;
+	top: 10px; 
+	left: 210px;  
+}
+#menu ul li{
+	border:solid 1px black;
+	background-color:#7dc81e;
+}
+#menu ul li:hover{
+	background-color:#18FF6D;
+}
+#menu ul li a{
+	text-decoration:none;
+	color:yellow;
+}
+nav ul li a:hover:not(.ici){
+	background-color:#18FF6D;
+}
+nav>ul>li>a{
+	text-align:center;
+	font-size:105%;
+	display:block;
+	color:black;
+	text-decoration:none;
+	padding:29px;	
+	height:150%;
+	
+}
+nav>ul>li>a:last-child{
+	border-bottom: none;
+}
+nav>ul{
+  list-style-type: none;
+  margin:0;
+  padding:0;
+  background-color:#04E824;
+  overflow:hidden;
+  border:solid black 1px;
+  height:100%;
+  border-radius:10px;
+  box-shadow:1px 1px #285238;
+}
+nav>ul>li{
+	position:relative;
+	border-bottom:solid 2px black;
+
+}
+content h2,content h3{
+	text-decoration:underline;
+}
+
+content{
+	margin-left:3px;
+	grid-area:c;
+	float:left;
+}
+.colonne1{
+	background-color:green;
+}
+.image{
+	margin-top:20px;
+	float:left;
+	width:30%;
+	border-radius:50%;
+}
+.info1{
+	background-color:green;
+	width:200px;
+	height:294px;
+	float:left;
+	padding-left:10px;
+}
+.colonne2{
+	border:dashed 2px black ;
+	border-collapse:collapse;
+	background-color:green;
+	margin-top:20px;
+	margin-left:10px;
+	width:250px;
+	padding-left:30px;
+	float:left;
+}
+.info2{
+	padding-right:20px;
+	height:294px;
+	padding-left:10px;
+	background-color:green;
+	margin-top:20px;
+	float:left;
+	border:2px dashed black;
+	border-collapse:collapse;
+}
+.boutton{
+	text-align:center;
+	padding:10px;
+	border-radius:20px;
+	border:solid 1px black;
+	text-decoration:none;
+	position:absolute;
+	right:300px;
+	top:425px;
+	color:black;
+	transition-property: background-color width height;
+	transition-duration:1s;
+	transition-timing-function: ease-in-out;
+}
+.boutton:hover{
+	background-color:#9af329;
+	width:10%;
+	height:3%;
+}
+.boutton2{
+	padding:10px;
+	border-radius:20px;
+	border:solid 1px black;
+	text-decoration:none;
+	position:absolute;
+	right:100px;
+	top:425px;
+	color:black;
+	transition-property: background-color width height;
+	transition-duration:1s;
+	transition-timing-function: ease-in-out;
+}
+.boutton2:hover{
+	background-color:#9af329;
+	width:10%;
+	height:3%;
+}
+#Réseaux{
+	margin-left:10px;
+	margin-top:5px;
+	grid-area:r;
+	background:url("images/separateur.png") repeat-x top;
+}
+#Réseaux h2{
+	text-decoration:underline;
+}
+#mentions{
+	grid-area:t;
+	background:url("images/separateur.png") repeat-x top;
+	margin-top:5px;
+}
+#mentions h2{
+	text-decoration:underline;
+}
+#mentions p{
+	text-align:left;
+}
+#remonte{
+	position:absolute;
+	left:550px;
+	top:800px;
+}
+#Nos_avis_presse{
+	grid-area:a;
+	background:url("images/separateur.png") repeat-x top;
+	margin-top:5px;
+}
+#Nos_avis_presse h2{
+	text-decoration:underline;
+}
