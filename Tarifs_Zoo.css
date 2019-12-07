@@ -16,8 +16,8 @@ header{
 }
 header h1{
   position:absolute;
-  left:42%;
-  background-color:#33CC33;
+  left:48%;
+  background-color:green;
   border-radius:10px;
 }
 #conteneur{
@@ -26,14 +26,52 @@ header h1{
   grid-template-columns:3fr 40% 35%;
   grid-template-areas:"h h h"
             "n c c"
-            "r t a";
+            "a t r";
 }
 .ici{
   background-color:#138A36;
 }
 nav{
-  width:;
   grid-area:n;
+  width:100%;
+  height:100%;
+}
+#menu{
+  list-style-type: none; 
+  margin: 0px;
+  padding: 0px;
+}
+
+#menu ul {
+  list-style-type:none;
+  margin:0;
+  padding:0;
+  display: none;
+  width:30%;
+}
+#menu li {
+  position: relative;
+}
+#menu a {
+  display: block;
+  text-align: center;
+}
+#menu li:hover ul {
+  display: block ;
+  position: absolute;
+  top: 10px; 
+  left: 210px;  
+}
+#menu ul li{
+  border:solid 1px black;
+  background-color:#7dc81e;
+}
+#menu ul li:hover{
+  background-color:#18FF6D;
+}
+#menu ul li a{
+  text-decoration:none;
+  color:yellow;
 }
 nav ul li a:hover:not(.ici){
   background-color:#18FF6D;
@@ -63,6 +101,7 @@ nav>ul{
   box-shadow:1px 1px #285238;
 }
 nav>ul>li{
+  position:relative;
   border-bottom:solid 2px black;
 
 }
@@ -70,15 +109,8 @@ content{
   grid-area:c;
   margin-left:3px;
 }
-
-#donations{
-  margin-left:415px;
-}
-#demande{
-  float:left;
-}
-
 #Réseaux{
+  margin-left:3px;
   margin-top:5px;
   grid-area:r;
   background:url("images/separateur.png") repeat-x top;
@@ -86,13 +118,21 @@ content{
 #Réseaux h2{
   text-decoration:underline;
 }
-#Derniers_tweets{
+#mentions{
   grid-area:t;
   background:url("images/separateur.png") repeat-x top;
   margin-top:5px;
 }
-#Derniers_tweets h2{
+#mentions h2{
   text-decoration:underline;
+}
+#mentions p{
+  text-align:left;
+}
+#remonte{
+  position:absolute;
+  left:550px;
+  top:800px;
 }
 #Nos_avis_presse{
   grid-area:a;
