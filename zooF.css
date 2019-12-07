@@ -134,6 +134,7 @@ content{
 	animation-play-state:paused;
 }
 .picture{
+	border-radius:10px;
 	animation-name: accueil;
 	animation-delay:0;
  	animation-duration: 8s;
